@@ -1,20 +1,22 @@
 <script>
 	/**
 	 * What should my name be?
+	 *
+	 * @type {import('./MyButton.svelte').Props["myName"]}
 	 */
 	export let myName = 'Foo';
 
 	/**
 	 * My custom prop!
 	 *
-	 * @type {import('./$lib/MyButton')['myCustomProp']}
+	 * @type {import('./MyButton.svelte').Props["myCustomProp"]}
 	 */
 	export let myCustomProp;
 </script>
 
 <button {...$$restProps}>
-	{#if myCustomProp}Yes, it is true{/if}
 	{myName}
+	{#if myCustomProp}isTrue{/if}
 	<slot />
 </button>
 

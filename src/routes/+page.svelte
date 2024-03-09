@@ -2,6 +2,6 @@
 	import MyButton from '$lib/MyButton.svelte';
 </script>
 
-<h1>Welcome to MyButton</h1>
+<h1>MyButton Test Page</h1>
 
-<MyButton myName="FooName" myCustomProp="BarProp">HiSlot</MyButton>
+<MyButton myName="aName" myCustomProp={true}>aSlot</MyButton>
