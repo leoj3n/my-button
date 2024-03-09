@@ -8,6 +8,5 @@
 		"sourceMap": true,
 		"module": "NodeNext",
 		"moduleResolution": "NodeNext"
-	},
-	"exclude": ["**/node_modules/**"]
+	}
 }
