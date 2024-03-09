@@ -1,5 +1,4 @@
-// @TODO: Decide if these patterns are no longer needed... 
-
+// @TODO: Decide if these patterns are no longer needed...
 
 // import type { HTMLButtonAttributes } from 'svelte/elements';
 
@@ -8,6 +7,7 @@
 // 	myCustomProp: boolean;
 // }
 
+// ---------------------------------------------------------------
 
 // import type { SvelteComponent } from 'svelte';
 // import type { SvelteHTMLElements } from 'svelte/elements';
