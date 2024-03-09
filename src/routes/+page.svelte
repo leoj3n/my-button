@@ -4,4 +4,4 @@
 
 <h1>Welcome to MyButton</h1>
 
-<MyButton myName="Foo" myCustomProp="Bar">Hi</MyButton>
+<MyButton myName="FooName" myCustomProp="BarProp">HiSlot</MyButton>

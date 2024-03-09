@@ -1,19 +1,19 @@
-<script lang="ts">
-	import type { HTMLButtonAttributes } from 'svelte/elements';
+<script>
+	/**
+	 * What should my name be?
+	 */
+	export let myName = 'Foo';
 
-	interface $$Props extends HTMLButtonAttributes {
-		/** What should my name be? */
-		myName: string;
-		/** My custom prop! */
-		myCustomProp: string;
-	}
-
-	export let myName: $$Props['myName'] = 'Foo';
-	export let myCustomProp: $$Props['myCustomProp'];
+	/**
+	 * My custom prop!
+	 *
+	 * @type {import('./$lib/MyButton')['myCustomProp']}
+	 */
+	export let myCustomProp;
 </script>
 
 <button {...$$restProps}>
-	{myCustomProp}
+	{#if myCustomProp}Yes, it is true{/if}
 	{myName}
 	<slot />
 </button>
@@ -29,6 +29,6 @@ It will show up on hover.
   ```
 - Advanced usage:
   ```tsx
-  <MyButton myName="Foo" myCustomProp="Bar">Baz</MyButton>
+  <MyButton myName="Foo" myCustomProp={true}>Baz</MyButton>
   ```
 -->
