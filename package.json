@@ -1,5 +1,5 @@
 {
-	"name": "my-button",
+	"name": "@leoj3n/my-button",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
